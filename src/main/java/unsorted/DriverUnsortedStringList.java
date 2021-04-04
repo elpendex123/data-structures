@@ -12,26 +12,26 @@ public class DriverUnsortedStringList {
             System.out.println(unsortedStringList.getNextItem());
 
         System.out.println("Test 2");
-        UnsortedStringList unsortedStringList2 = new UnsortedStringList(5);
-        unsortedStringList2.insert("Tom");
-        System.out.println(unsortedStringList2.lenghtIs());
-        System.out.println(unsortedStringList2.isFull());
-        System.out.println(unsortedStringList2.isThere("Tom"));
-        for(int i = 0; i < unsortedStringList2.numItems; i++)
-            System.out.println(unsortedStringList2.getNextItem());
+        UnsortedStringList unsortedStringList1b = new UnsortedStringList(5);
+        unsortedStringList1b.insert("Tom");
+        System.out.println(unsortedStringList1b.lenghtIs());
+        System.out.println(unsortedStringList1b.isFull());
+        System.out.println(unsortedStringList1b.isThere("Tom"));
+        for(int i = 0; i < unsortedStringList1b.numItems; i++)
+            System.out.println(unsortedStringList1b.getNextItem());
 
         System.out.println("Test 3");
-        unsortedStringList2.insert("Julie");
-        unsortedStringList2.insert("Nora");
-        unsortedStringList2.insert("Maeve");
-        System.out.println(unsortedStringList2.lenghtIs());
-        System.out.println(unsortedStringList2.isFull());
-        System.out.println(unsortedStringList2.isThere("Tom"));
-        System.out.println(unsortedStringList2.isThere("Julie"));
-        System.out.println(unsortedStringList2.isThere("Nora"));
-        System.out.println(unsortedStringList2.isThere("Kevin"));
-        for(int i = 0; i < unsortedStringList2.numItems; i++)
-            System.out.print(unsortedStringList2.getNextItem() + " ");
+        unsortedStringList1b.insert("Julie");
+        unsortedStringList1b.insert("Nora");
+        unsortedStringList1b.insert("Maeve");
+        System.out.println(unsortedStringList1b.lenghtIs());
+        System.out.println(unsortedStringList1b.isFull());
+        System.out.println(unsortedStringList1b.isThere("Tom"));
+        System.out.println(unsortedStringList1b.isThere("Julie"));
+        System.out.println(unsortedStringList1b.isThere("Nora"));
+        System.out.println(unsortedStringList1b.isThere("Kevin"));
+        for(int i = 0; i < unsortedStringList1b.numItems; i++)
+            System.out.print(unsortedStringList1b.getNextItem() + " ");
 
     }
 }
