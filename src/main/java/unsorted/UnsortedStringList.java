@@ -7,18 +7,20 @@ public class UnsortedStringList {
     protected int currentPos;
     protected int maxItems;
 
-    public void UnsortedStringList(int maxItems) {
+    public UnsortedStringList(int maxItems) {
         numItems = 0;
         list = new String[maxItems];
     }
 
-    public void UnsortedStringList() {
+    public UnsortedStringList() {
         numItems = 0;
         list = new String[100];
     }
 
     public boolean isFull() {
-        return (list.length == numItems);
+        if (list != null && list.length == numItems)
+            return true;
+        return false;
     }
 
     public int lenghtIs() {
@@ -66,7 +68,7 @@ public class UnsortedStringList {
     public String getNextItem() {
         String next = list[currentPos];
 
-        if(currentPos == numItems - 1)
+        if (currentPos == numItems - 1)
             currentPos = 0;
         else
             currentPos++;
